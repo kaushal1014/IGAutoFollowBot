@@ -27,10 +27,10 @@ def follow():
     time.sleep(5)
     for i in range(3):
         for j in range(6):
-            follow = driver1.find_element_by_xpath("//button[text()='Follow']")
+            follow = driver.find_element_by_xpath("//button[text()='Follow']")
             follow.click()
             time.sleep(2)
-            driver1.refresh()
+            driver.refresh()
     driver.close()
     
 follow()
